@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -22,9 +23,9 @@ const Home: NextPage = () => {
         </p>
 
         <h1 className={styles.subtitle}>API Reference</h1>
-        <a href="/api/characters" className={styles.card}>/api/characters</a>
-        <a href="/api/characters?limit=5&skip=5" className={styles.card}>/api/characters?limit=5&skip=5</a>
-        <a href="/api/characters/1" className={styles.card}>/api/characters/[id]</a>
+        <Link href="/api/characters" className={styles.card}>/api/characters</Link>
+        <Link href="/api/characters?limit=5&skip=5" className={styles.card}>/api/characters?limit=5&skip=5</Link>
+        <Link href="/api/characters/1" className={styles.card}>/api/characters/[id]</Link>
 
       </main>
     </div>
